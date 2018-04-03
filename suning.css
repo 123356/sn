@@ -25,8 +25,72 @@
 /* 导航里特效设置结束 */
 .sn_daohang{ width: 100%; height: 36px; background-color: #F5F5F5; }
 .sn_daohang_neirong{ width: 1190px; height: 36px; margin: 0 auto; text-align: center; line-height: 36px; }
-.sn_daohang_neirong_left{ float: left; }
-.sn_daohang_neirong_left p{ float: left; font-size: 12px; margin-right: 4px; }
+.sn_daohang_neirong_left{ 
+	float: left;
+	 position: relative;
+	  }
+.sn_daohang_neirong_left p
+
+{ float: left;
+ font-size: 12px;
+  margin-right: 4px;
+  display: block;
+  
+}
+.dh_bottom{
+	width: 988px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background: #f2f2f2;
+	z-index: 666;
+	height: 200px;
+	display: none;
+}
+.navO{
+	width: 71px;
+	left: 85px;
+	top: 0;
+	position: absolute;
+	height: 100px;
+	background-color:#f2f2f2;
+	display: none;
+}
+.navS{
+	width: 540px;
+	position: absolute;
+	background-color:#f2f2f2;
+	display: none;
+	height: 100px;
+	right: 0;
+	top: 0;
+
+}
+.navT{
+	width: 255px;
+	position: absolute;
+	background-color: #f2f2f2;
+	display: none;
+	height: 100px;
+	right: 255px;
+	top: 0;
+}
+.navl{
+	width: 170px;
+	position: absolute;
+	background-color: #f2f2f2;
+	display: none;
+	height: 100px;
+	right: 510px;
+	top: 0;
+}
+.navOne{
+	width: 1190px;
+	height: auto;
+	position: absolute;
+	top: 37px;
+	left: 0;
+}
 .sn_daohang_neirong_left em{ float: left; font-size: 20px; margin-right: 4px; font-family: iconfont; display: block; color: #ff6700; }
 .sn_daohang_neirong_left i{
  float: left;
@@ -269,12 +333,12 @@ z-index: 99;
 .b_z img{
 	position: absolute;
 	top: 0px;
-	left: -0px;
+	left: -350px;
 }
 .b_y img{
 	position: absolute;
 	top: 0px;
-	right: -10px;
+	right: -350px;
 }
 .banner{
 	width: 1190px;
@@ -854,13 +918,79 @@ transition: all 0.3s linear;
 	margin-top: 20px;
 
 }
+.totle{
+	width: 390px;
+	height: 427px;
+	margin-right: 10px;
+	float: left;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+.nav_prev,.nav_next{
+width: 30px;
+height: 60px;
+text-align: center;
+line-height: 60px;
+background-color: #f5f5f5;
+color: rgba(0, 0, 0, 0.4);
+opacity: 0;
+font-size: 25px;
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto;
+z-index: 88;
+
+}
+.nav_prev{
+left: 0;
+}
+.nav_next{
+	right: 0;
+}
+.nav_prev:hover,.nav_next:hover{
+	opacity: 1;
+}
+.sangedian{
+	width: 80px;
+	height: 10px;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	line-height: 10px;
+	text-align: center;
+	z-index: 88;
+	
+}
+.sangedian .active{
+	background-color: blue;
+	z-index: 111;
+}
+.sangedian li{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	color: #ff6700;
+	border: 2px solid #ff6700;
+	float: left;
+	margin-right: 10px;
+}
+.title_change{
+	width: 1950px;
+	height: 427px;
+	
+	margin-left: -390px;
+}
 .nsan1{
 	width: 390px;
 	height: 427px;
 	margin-right: 10px;
 	float: left;
 	background-color: white;
-	
+	position: relative;
 }
 .nsan2{
 	margin-right: 0px;
@@ -931,12 +1061,15 @@ transition: all 0.3s linear;
 	margin-right: 5px;
 	color: white;
 }
+
 .nsan_bottom{
 	margin-top: 22px;
 	width: 370px;
 	height: 360px;
 	padding: 0 10px;
-}
+	float: left;
+	/* transition: all 0.3s; */
+	}
 
 .nsan_bottom_liu{
 	width: 184px;
@@ -1222,57 +1355,79 @@ margin-bottom: 10px;
 	float: left;
 	margin-right: 10px;
 }
-.nr_wu_right img
+.big img
 {
 	width: 390px;
 	height: 227px;
-	position: absolute;
-	top: 45px;
-	right: 0;
+	
+	margin-top: 45px;
 
 }
 .shengxian-right{
 	width: 388px;
 	height: 73px;
-	position: absolute;
-	right: 0px;
-	top: 270px;
+	position: relative;
 	overflow: hidden;
 	
 
+}
+.pr,.ne{
+width: 10px;
+height: 73px;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.5);
+opacity: 0;	
+color: white;
+text-align: center;
+line-height: 73px;
+
+}
+.pr{
+	top: 0;
+	left: 0;
+}
+.ne{
+	top: 0;
+	right: 0;
+}
+.pr:hover,.ne:hover{
+	opacity: 1;
 }
 .right-contr{
 	width: 3000px;
 	height: 73px;
 	text-align: center;
+	transition: width 0.3s;
 
 }
 .right-contr img{
-	width: 128px;
+	width: 123px;
 	height: 73px;
 	display: block;
-	margin-right: 2px;
-	margin-top: -20px;
+	float: left;
+	margin-right: 10px;
 }
 
-.nr_wu_right .right3{
+.rig_nott .right3{
 	width: 190px;
 	height: 170px;
-	position: absolute;
+	
 	background: linear-gradient(#70A366 , #9DC566);
-	bottom: 0;
-	right: 0;
-	
-	
-
+	margin-right: 10px;
+	float: left;
 }
-.nr_wu_right .right4{
+.rig_nott{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.rig_nott .right4{
 	width: 190px;
 	height: 170px;
 	background: linear-gradient(#4025BC , #576EE7);
-	position: absolute;
-	bottom: 0;
-	right: 200px;
+	float: left;
+	
 	
 
 
@@ -2228,7 +2383,7 @@ display: inline-block;
 	}
 	.contens{
 		width: 1190px;
-		height: auto;
+		
 		margin: 0 auto;
 	}
 	 .suning_banner_nav .me{
@@ -2348,13 +2503,17 @@ display: inline-block;
 
 	}
 	.float_news,.lefft{
-		width: 0px;
+		
 		height: 30px;
-		/* display: none; */
+		display: none;
 		background-color: #ff6900;
 		position: absolute;
 		right: 35px;
 		top: 0;
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		color: white;
 		transition: width 1s;
 	}
 	.title_fl{
@@ -2395,13 +2554,14 @@ z-index: 89;
 	user-select: none;
 	width: 41px;
 	height: 50px;
-	color: red;
+	color: white;
 	text-align: center;
 	line-height: 69px;
 	font-size: 25px;
 	position: absolute;
-	background-color: white;
+	background-color: cyan;
 	display: block;
+	z-index: 9999;
 
 }
 .btn1{
@@ -2426,7 +2586,9 @@ margin: auto;
 .party-left{
 	width: 10000px;
 	height: 260px;
-	transition: all 1s;
+	
+	margin-left: -1000px;
+
 
 
 }
